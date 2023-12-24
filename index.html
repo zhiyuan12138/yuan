@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="一个由表单元素构建的圣诞树。" />
+	<meta name="author" content="Hakim El Hattab" />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<title>yuan.DOM Tree</title>
+	<link href="domtree.css" rel="stylesheet" media="screen" /> <!-- 引用外部的 CSS 文件 -->
+	<link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'> <!-- 引用 Google 字体 -->
+</head>
+ 
+<body>
+	<div class="tree"></div> <!-- 用于显示 DOM 树的容器 -->
+	<script src="domtree.js"></script> <!-- 引用外部的 JavaScript 文件 -->
+	<!-- 第三方脚本和分享 UI -->
+	<!-- src属性指定了音频文件的路径。autoplay属性设置为true表示自动播放音频，loop属性设置为true表示循环播放音频。hidden属性用于隐藏音频播放器。 -->
+	<!-- <embed src="./d097_5915_926d_6fecd684bf63cc9120aac307ea49206c.mp3" hidden="true" autostart="true" loop="true"> -->
+	<audio src="./d097_5915_926d_6fecd684bf63cc9120aac307ea49206c.mp3" autoplay loop hidden></audio>
+	<p class="project-title">DOM Tree</p> <!-- 项目标题 -->
+	<div class="credits">
+		<a>鸢.</a>
+		<a>鸢.</a>
+	</div>
+ 
+	<style type="text/css" media="screen">
+		.project-title {
+			position: absolute;
+			left: 25px;
+			bottom: 20px;
+ 
+			font-size: 16px;
+			color: #fff;
+		}
+ 
+		.credits {
+			position: absolute;
+			right: 20px;
+			bottom: 25px;
+			font-size: 15px;
+			z-index: 20;
+			color: #fff;
+			vertical-align: middle;
+		}
+ 
+		.credits *+* {
+			margin-left: 15px;
+		}
+ 
+		.credits a {
+			padding: 8px 10px;
+			color: rgba(255, 255, 255, 0.7);
+			border: 2px solid rgba(255, 255, 255, 0.7);
+			text-decoration: none;
+		}
+ 
+		.credits a:hover {
+			border-color: #fff;
+			color: #fff;
+		}
+ 
+		@media screen and (max-width: 1040px) {
+			.project-title {
+				display: none;
+			}
+ 
+			.credits {
+				width: 100%;
+				left: 0;
+				right: auto;
+				bottom: 0;
+				padding: 30px 0;
+				background: #b72424;
+				text-align: center;
+			}
+ 
+			.credits a {
+				display: inline-block;
+				margin-top: 7px;
+				margin-bottom: 7px;
+			}
+		}
+	</style>
+ 
+	<script>
+		var _gaq = [['_setAccount', 'UA-15240703-1'], ['_trackPageview']];
+		(function (d, t) {
+			var g = d.createElement(t),
+				s = d.getElementsByTagName(t)[0];
+			g.async = true;
+			g.src = ('https:' == location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g, s);
+		})(document, 'script');
+	</script>
+ 
+</body>
+ 
+</html>
